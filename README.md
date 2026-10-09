@@ -52,3 +52,5 @@ python sql/run_sql.py     # prints all SQL query results
 
 ## Power BI version
 `powerbi/build_guide.md` and `powerbi/measures.dax` contain the data model, DAX measures and page layouts to rebuild this in Power BI Desktop. Add a screenshot here once built: `![Power BI dashboard](powerbi/dashboard.png)`
+                                                                                                             
+                                                                                                             
