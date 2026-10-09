@@ -1,0 +1,15 @@
+// Paste into Power BI Desktop (Modeling > New measure). Table name: Superstore. Date table: 'Date'.
+Total Sales = SUM(Superstore[Sales])
+Total Profit = SUM(Superstore[Profit])
+Profit Margin % = DIVIDE([Total Profit], [Total Sales])
+Orders = DISTINCTCOUNT(Superstore[Order ID])
+Loss Lines = CALCULATE(COUNTROWS(Superstore), Superstore[Profit] < 0)
+Loss Line % = DIVIDE([Loss Lines], COUNTROWS(Superstore))
+Heavy Discount Sales % = DIVIDE(CALCULATE([Total Sales], Superstore[Discount] > 0.2), [Total Sales])
+Heavy Discount Profit = CALCULATE([Total Profit], Superstore[Discount] > 0.2)
+Profit LY = CALCULATE([Total Profit], SAMEPERIODLASTYEAR('Date'[Date]))
+Profit YoY % = DIVIDE([Total Profit] - [Profit LY], [Profit LY])
+// Calculated columns
+Tier Order = SWITCH(TRUE(), Superstore[Discount]=0, 1, Superstore[Discount]<=0.2, 2, Superstore[Discount]<=0.4, 3, 4)
+// Date table
+Date = CALENDAR(DATE(2014,1,1), DATE(2017,12,31))
