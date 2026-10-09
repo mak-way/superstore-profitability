@@ -1,0 +1,4 @@
+scenario,profit,change_vs_actual,change_pct
+Actual,286397.0,0.0,0.0
+A: cap discounts at 20% (same volume),505588.0,219191.0,76.5
+B: stop selling above 20% (lose those lines),421773.1,135376.1,47.3

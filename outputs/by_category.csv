@@ -1,0 +1,4 @@
+Category,orders,lines,sales,profit,avg_discount,loss_line_pct,margin_pct
+Furniture,1764,2121,741999.8,18451.3,17.4,33.7,2.5
+Office Supplies,3742,6026,719047.0,122490.8,15.7,14.7,17.0
+Technology,1544,1847,836154.0,145454.9,13.2,14.7,17.4

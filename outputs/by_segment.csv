@@ -1,0 +1,4 @@
+Segment,orders,lines,sales,profit,avg_discount,loss_line_pct,margin_pct
+Consumer,2586,5191,1161401.3,134119.2,15.8,19.3,11.5
+Corporate,1514,3020,706146.4,91979.1,15.8,18.4,13.0
+Home Office,909,1783,429653.1,60298.7,14.7,17.5,14.0
